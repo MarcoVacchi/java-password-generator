@@ -37,7 +37,7 @@ public class PasswordGenerator {
         input.close();
 
         int datePass = dayOfBirth + monthOfBirth + ageOfBirth;
-        String password = firstName + surName + color + datePass;
+        String password = firstName + "-" + surName + "-" + color + "-" + datePass;
 
         System.out.println("la tua nuova password è: " + password);
 
