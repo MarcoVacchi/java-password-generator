@@ -6,7 +6,7 @@ public class PasswordGenerator {
     public static void main(String[] args) {
 
         String firstName;
-        String surName;
+        String lastName;
         String color;
         int dayOfBirth;
         int monthOfBirth;
@@ -17,7 +17,7 @@ public class PasswordGenerator {
         firstName = input.nextLine();
 
         System.out.print("Inserisci il tuo cognome ");
-        surName = input.nextLine();
+        lastName = input.nextLine();
 
         System.out.print("Inserisci il tuo colore preferito ");
         color = input.nextLine();
@@ -37,7 +37,7 @@ public class PasswordGenerator {
         input.close();
 
         int datePass = dayOfBirth + monthOfBirth + ageOfBirth;
-        String password = firstName + "-" + surName + "-" + color + "-" + datePass;
+        String password = firstName + "-" + lastName + "-" + color + "-" + datePass;
 
         System.out.println("la tua nuova password è: " + password);
 
